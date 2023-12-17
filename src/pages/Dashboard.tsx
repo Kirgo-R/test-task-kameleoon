@@ -149,8 +149,9 @@ export default function Dashboard({
   ) : (
     <>
       <p>Your search did not match any results.</p>
-      searched &&{' '}
-      <Button handleReset={handleResetSearchResult} name={'Reset'} />
+      {searched && (
+        <Button handleReset={handleResetSearchResult} name={'Reset'} />
+      )}
     </>
   )
 }
