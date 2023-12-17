@@ -1,0 +1,30 @@
+@import "../../styles/styles";
+
+.column-heading {
+  @include column-heading;
+  padding: 40px 0 0;
+  box-sizing: border-box;
+}
+
+.column-heading_sort {
+  @include column-heading;
+
+  &:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 1px $gray-font solid;
+    border-left: 1px $gray-font solid;
+    position: absolute;
+    rotate: 225deg;
+    margin: 0 0 0 8px;
+    top: 2px;
+  }
+}
+
+.sorted {
+  &:after {
+    rotate: 45deg;
+    top: 6px;
+  }
+}

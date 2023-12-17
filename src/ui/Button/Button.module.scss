@@ -1,0 +1,30 @@
+@import "../../styles/styles";
+
+.button {
+  border-radius: 10px;
+  width: 95px;
+  height: 30px;
+  cursor: pointer;
+  transition: opacity .35s linear;
+  color: $light-font-color;
+  font-family: $montserrat;
+  font-size: 12px;
+  font-weight: 600;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.result {
+  background: $green-button;
+}
+
+.finalize {
+  background: $gray-button;
+}
+
+.reset {
+  background: $green-button;
+  margin: 40px 0 0;
+}

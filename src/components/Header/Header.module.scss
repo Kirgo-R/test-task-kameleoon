@@ -1,0 +1,17 @@
+@import "../../styles/styles";
+
+.title {
+  font-family: $montserrat;
+  font-weight: 700;
+  align-self: flex-start;
+  color: $main-font-color;
+}
+
+.subtitle {
+  align-self: flex-start;
+  color: $main-font-color;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+}

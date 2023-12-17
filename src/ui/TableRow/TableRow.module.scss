@@ -1,0 +1,84 @@
+@import "../../styles/styles";
+
+.table-row {
+  background: $bg-color-light;
+  height: 70px;
+  cursor: pointer;
+  transition: box-shadow .35s linear;
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);;
+  }
+
+  td:first-child {
+    border-radius: 3px 0 0 3px;
+    padding-left: 10px;
+  }
+}
+
+.border-red {
+  td:first-child {
+    border-left: 4px $border-red solid;
+  }
+}
+
+.border-sky {
+  td:first-child {
+    border-left: 4px $border-sky solid;
+  }
+}
+
+.border-blue {
+  td:first-child {
+    border-left: 4px $border-blue solid;
+  }
+}
+
+.name {
+  color: $input-font-color;
+  font-family: $roboto;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.type {
+  color: $draft;
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.status {
+  font-family: $roboto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.online {
+  color: $online
+}
+
+.paused {
+  color: $paused;
+}
+
+.draft {
+  color: $draft;
+}
+
+.stopped {
+  color: $stopped;
+}
+
+.site {
+  a {
+    color: $font-color;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.button {
+  text-align: center;
+}

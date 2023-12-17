@@ -1,0 +1,11 @@
+@import "../../styles/styles";
+
+.button {
+  cursor: pointer;
+  margin: 0 16px 0 13px;
+  transition: opacity .3s linear;
+
+  &:hover {
+    opacity: .75;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../styles/styles";
+
+.link {
+  margin: auto auto 50px 50px;
+  position: relative;
+  color: $main-font-color;
+  font-family: $nunito;
+  font-size: 18px;
+  font-weight: 700;
+  transition: opacity .35s linear;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  &:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-top: 1px $main-font-color solid;
+    border-left: 1px $main-font-color solid;
+    position: absolute;
+    rotate: -45deg;
+    left: -20px;
+    top: 5px;
+  }
+}
